@@ -11,7 +11,8 @@ export default function Page() {
           Home
         </Link> */}
 
-        <SignIn path="/sign-in" routing="path" signUpUrl="/sign-up" />
+        {/* <SignIn path="/sign-in" routing="path" signUpUrl="/sign-up" /> */}
+        <SignIn />
       </div>
     </div>
   )

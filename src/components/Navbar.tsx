@@ -21,7 +21,7 @@ const Navbar: FC<NavbarProps> = ({}) => {
             Sign In
           </Link>
 
-          {/* <UserButton afterSignOutUrl="/" /> */}
+          <UserButton />
         </div>
       </div>
     </div>

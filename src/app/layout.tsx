@@ -15,16 +15,19 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={cn('bg-white text-slate-900 antialiased light')}>
-      <body className="min-h-screen pt-12 bg-slate-50 antialiased">
-        {/* <ClerkProvider> */}
-        <Navbar />
-        <div className="container max-w-7xl mx-auto h-full pt-12">
-          {children}
-        </div>
-        {/* </ClerkProvider> */}
-        <Toaster />
-      </body>
-    </html>
+    <ClerkProvider>
+      <html
+        lang="en"
+        className={cn('bg-white text-slate-900 antialiased light')}
+      >
+        <body className="min-h-screen pt-12 bg-slate-50 antialiased">
+          <Navbar />
+          <div className="container max-w-7xl mx-auto h-full pt-12">
+            {children}
+          </div>
+          <Toaster />
+        </body>
+      </html>
+    </ClerkProvider>
   )
 }
